@@ -3,9 +3,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function App() {
+export default function Html() {
   return (
-    <div style={{ background: "#212529" }}>
+    <>
       <div
         style={{
           paddingTop: 50,
@@ -19,15 +19,15 @@ function App() {
         }}
       >
         <img
-          style={{ width: "50%", borderRadius: 7 }}
+          style={{ width: "40%", borderRadius: 7 }}
           className="imgagem"
           src="https://wallpapercave.com/wp/wp4923981.jpg"
           alt="First slide"
         />
 
-        <div style={{ display: "flex", flexDirection: "column" }}>
+        <div style={{ display: "flex", flexDirection: "column", background: "#737372", borderRadius: 12, padding: 10 }}>
           <input
-            style={{ margin: 20, padding: 10, borderRadius: 7, border: "thin" }}
+            style={{ margin: 20, padding: 10, borderRadius: 7, border: "thin", width: 300 }}
             placeholder="Login"
           ></input>
           <input
@@ -36,8 +36,8 @@ function App() {
           ></input>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
-export default App;
+

@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Container from "react-bootstrap/Container";
@@ -15,7 +14,7 @@ import Form from "react-bootstrap/Form";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function App() {
+function Bootstrap() {
   return (
     <>
       <Navbar bg="primary" variant="dark" expand="lg">
@@ -139,4 +138,4 @@ function App() {
   );
 }
 
-export default App;
+export default Bootstrap;
