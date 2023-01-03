@@ -26,7 +26,7 @@ export default function Home() {
           margin: 15,
           flexDirection: "column",
           fontWeight: "bold",
-          padding: 20
+          padding: 15
         }}
       >
         <img
@@ -46,15 +46,15 @@ export default function Home() {
       <Link to={"/Bootstrap"}>
         <button
           style={{
-            padding: 10,
-            borderRadius: 20,
-            border: "thin",
             width: 250,
-            background: "#031a3d ",
-            color: "#FFFFFF",
-            margin: 15,
+            borderRadius: 20,
+            background: "#031A3D",
             fontWeight: "bold",
-            padding: 20
+            color: "white",
+            border: "none",
+            padding: 15,
+            fontWeight: "bold",
+            margin: 20
           }}
         >
           Pagina com Bootstrap
@@ -63,15 +63,14 @@ export default function Home() {
       <Link to={"/Html"}>
         <button
           style={{
-            padding: 10,
-            borderRadius: 20,
-            border: "thin",
             width: 250,
-            background: "#031a3d",
-            color: "#FFFFFF",
-            margin: 15,
+            borderRadius: 20,
+            background: "#031A3D",
             fontWeight: "bold",
-            padding: 20
+            color: "white",
+            border: "none",
+            padding: 15,
+            fontWeight: "bold",
           }}
         >
           Pagina apenas com HTML
