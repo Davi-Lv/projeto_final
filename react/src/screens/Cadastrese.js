@@ -6,7 +6,6 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Carousel from "react-bootstrap/Carousel";
 import { Link } from "react-router-dom";
-import Table from "react-bootstrap/Table";
 
 import React from "react";
 
@@ -14,7 +13,8 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-function Bootstrap() {
+
+function Cadastrese() {
   return (
     <>
       <Navbar bg="primary" variant="dark" expand="lg">
@@ -100,7 +100,11 @@ function Bootstrap() {
 
         <Container style={{ width: 300 }}>
           <Form>
-            <h1 style={{ marginBottom: 20, textAlign: "center" }}>Login</h1>
+            <h1 style={{ marginBottom: 20, textAlign: "center" }}>Cadastrar</h1>
+            <Form.Group className="mb-3" controlId="formBasicEmail">
+              <Form.Label>Nome</Form.Label>
+              <Form.Control type="name" placeholder="" />
+            </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Email</Form.Label>
               <Form.Control type="email" placeholder="" />
@@ -111,56 +115,14 @@ function Bootstrap() {
             </Form.Group>
             <Link to={"/"}>
               <Button style={{ width: 276 }} variant="primary" type="submit">
-                Acessar{" "}
-              </Button>
-            </Link>
-            <Link to={"/cadastrar"}>
-              <Button
-                style={{ width: 276, marginTop: 10, marginBottom: 10 }}
-                variant="primary"
-                type="submit"
-              >
-                Cadastre-se{" "}
+                Cadastrar{""}
               </Button>
             </Link>
           </Form>
         </Container>
       </div>
-
-      <Table striped bordered hover>
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Username</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td colSpan={2}>Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
-      </Table>
-
-      <br />
-      <br />
     </>
   );
 }
 
-export default Bootstrap;
+export default Cadastrese;

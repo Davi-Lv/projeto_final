@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 import { InputHTML } from "./InputHTML";
 
-export default function Html() {
+export default function CadastreseHTML() {
   return (
     <>
       <div
@@ -37,28 +37,12 @@ export default function Html() {
             alignItems: "center",
           }}
         >
-          <h1 style={{ color: "white", fontWeight: "bold" }}>Login</h1>
-          <br/>
-
-          <InputHTML placeholderInput="Login"></InputHTML>
+          <h1 style={{ color: "white", fontWeight: "bold" }}>Cadastrar</h1>
+          <br />
+          <InputHTML placeholderInput="Nome"></InputHTML>{" "}
+          <InputHTML placeholderInput="E-mail"></InputHTML>{" "}
           <InputHTML placeholderInput="Senha"></InputHTML>
-          <br/>
           <Link to={"/"}>
-            <button
-              style={{
-                width: 300,
-                borderRadius: 10,
-                background: "#031A3D",
-                fontWeight: "bold",
-                color: "white",
-                border: "none",
-                padding: 10,
-              }}
-            >
-              Acessar
-            </button>
-          </Link>
-          <Link to={"/cadastrarHTML"}>
             <button
               style={{
                 width: 300,
@@ -71,7 +55,7 @@ export default function Html() {
                 margin: 20,
               }}
             >
-              Cadastre-se
+              Cadastrar
             </button>
           </Link>
         </div>
