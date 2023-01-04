@@ -3,6 +3,14 @@ import "./App.css";
 import React from "react";
 
 export default function Home() {
+  function mudarBTN() {
+    var btn = document.getElementById("btn");
+    if (btn.innerHTML === "Click aqui e veja quem fez") {
+      btn.innerHTML = "Feito por: <b>Davi Mordonho</b>";
+    } else {
+      btn.innerHTML = "Click aqui e veja quem fez";
+    }
+  }
   return (
     <div
       style={{
@@ -26,7 +34,7 @@ export default function Home() {
           margin: 15,
           flexDirection: "column",
           fontWeight: "bold",
-          padding: 15
+          padding: 15,
         }}
       >
         <img
@@ -34,7 +42,7 @@ export default function Home() {
           src="https://cdn-icons-png.flaticon.com/512/9073/9073243.png"
           alt="home"
         />
-        <br/>
+        <br />
         <h1
           style={{
             margin: 0,
@@ -54,7 +62,7 @@ export default function Home() {
             border: "none",
             padding: 15,
             fontWeight: "bold",
-            margin: 20
+            margin: 20,
           }}
         >
           Pagina com Bootstrap
@@ -76,6 +84,23 @@ export default function Home() {
           Pagina apenas com HTML
         </button>
       </Link>
+      <br />
+      <button
+        id="btn"
+        onClick={mudarBTN}
+        style={{
+          width: 250,
+          borderRadius: 20,
+          background: "none",
+          fontWeight: "bold",
+          color: "#031A3D",
+          border: "none",
+          padding: 15,
+          fontWeight: "normal",
+        }}
+      >
+        Click aqui e veja quem fez
+      </button>
     </div>
   );
 }

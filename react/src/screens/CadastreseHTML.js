@@ -39,11 +39,48 @@ export default function CadastreseHTML() {
         >
           <h1 style={{ color: "white", fontWeight: "bold" }}>Cadastrar</h1>
           <br />
-          <InputHTML placeholderInput="Nome"></InputHTML>{" "}
-          <InputHTML placeholderInput="E-mail"></InputHTML>{" "}
-          <InputHTML placeholderInput="Senha"></InputHTML>
+          <input
+            id="nome"
+            type={"text"}
+            style={{
+              width: 300,
+              marginBottom: 20,
+              padding: 10,
+              borderRadius: 7,
+              border: "thin",
+              width: 300,
+            }}
+            placeholder="Nome"
+          />
+          <input
+            id="email"
+            type={"email"}
+            style={{
+              width: 300,
+              marginBottom: 20,
+              padding: 10,
+              borderRadius: 7,
+              border: "thin",
+              width: 300,
+            }}
+            placeholder="E-mail"
+          />
+          <input
+            id="senha"
+            type={"password"}
+            style={{
+              width: 300,
+              marginBottom: 20,
+              padding: 10,
+              borderRadius: 7,
+              border: "thin",
+              width: 300,
+            }}
+            placeholder="Senha"
+          />
           <Link to={"/"}>
             <button
+              type="submit"
               style={{
                 width: 300,
                 borderRadius: 10,
